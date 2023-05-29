@@ -8,11 +8,11 @@ longitude,Longitude,,,,
 surface_area_km2,Surface area (km2),
 reservoir_nonreservoir,Basin type,
 date_dam_completion,Dam completion date,
-motorboat_restriction,Motor restrictions,
+motorboat_restriction,Motor restrictions,true
 motorboat_restriction_notes,Motor restrictions notes,
 primary_emergent_veg,Primary emergent vegetation,true
 primary_veg_for_nesting,Primary vegetation for nesting,true
-management_agency,Management agency,
-lake_use,Lake use,
+management_agency,Management agency,true
+lake_use,Lake use,true
 region_associations,Region associations,
 comments,Comments,
