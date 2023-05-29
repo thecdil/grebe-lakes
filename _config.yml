@@ -37,6 +37,10 @@ author: CollectionBuilder
 metadata: grebe-lake-table
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
+page_gen:
+  - data: grebe-lake-table
+    template: 'lake'
+    
 # page_gen:
 #   - data: 'demo-metadata'
 #     template: 'item'
