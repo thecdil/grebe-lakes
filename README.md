@@ -1,3 +1,9 @@
+# grebe-lakes
+
+early draft preview of grebe breeding lakes data.
+
+CDIL Fellowship project by Anne Yen and Evan Williamson.
+
 # CollectionBuilder-CSV
 
 CollectionBuilder-CSV is a robust and flexible "stand alone" template for creating digital collection and exhibit websites using Jekyll and a metadata CSV.
