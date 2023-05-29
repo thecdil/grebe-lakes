@@ -1,5 +1,6 @@
 field,display_name,search
-date,Date,true
-creator,Creator,true
-subject,Subjects,true
-location,Location,true
+state_province,Location,true
+HydroLAKE_ID,HydroLAKE,true
+GRanD_id,GRanD,true
+reservoir_nonreservoir,Basin Type,
+management_agency,Management,true

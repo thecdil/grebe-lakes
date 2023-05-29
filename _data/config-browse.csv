@@ -1,6 +1,7 @@
 field,display_name,btn,hidden,sort_name
-date,Date,,,Date
-creator,Creator,,,
-subject,,true
-location,,true
-identifier,,,true,Identifier
+state_province,State,true,
+HydroLAKE_ID,HydroLAKE,
+GRanD_id,GRanD,
+reservoir_nonreservoir,Basin Type,true,
+motorboat_restriction,Motor restrictions,true,
+management_agency,Management,true

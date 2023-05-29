@@ -1,14 +1,18 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
-title,Title,,,DCTERMS.title,headline
-creator,Creator,,,DCTERMS.creator,creator
-date,Date Created,,,DCTERMS.date,dateCreated
-description,Description,,,DCTERMS.description,description
-subject,Subjects,true,,DCTERMS.subject,keywords
-location,Location,,,,contentLocation
+title,Lake name,,,DCTERMS.title,headline
+state_province,Location,,,,contentLocation
+HydroLAKE_ID,HydroLAKE ID,
+GRanD_id,GRanD ID,
 latitude,Latitude,,,,
 longitude,Longitude,,,,
-source,Source,,,,
-identifier,Source Identifier,,,,
-type,Type,,,DCTERMS.type,
-format,Format,,,,encodingFormat
-rightsstatement,,,,DCTERMS.rights,license
+surface_area_km2,Surface area (km2),
+reservoir_nonreservoir,Basin type,
+date_dam_completion,Dam completion date,
+motorboat_restriction,Motor restrictions,
+motorboat_restriction_notes,Motor restrictions notes,
+primary_emergent_veg,Primary emergent vegetation,true
+primary_veg_for_nesting,Primary vegetation for nesting,true
+management_agency,Management agency,
+lake_use,Lake use,
+region_associations,Region associations,
+comments,Comments,
