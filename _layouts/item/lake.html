@@ -33,14 +33,14 @@ custom-foot: js/lake-mini-map.html
 
         </div>
 
+        {% assign surveys = site.data.grebe-surveys-table | where: 'lakeid',page.objectid %}
+        {% if surveys %}
         <div class="col-12 py-4">
-
             <div class="card">
                 <div class="card-header">Survey Information</div>
                 <div class="card-body">
                     <ul>
                         {% assign survey_fields = site.data.config-survey-fields %}
-                        {% assign surveys = site.data.grebe-surveys-table | where: 'lakeid',page.objectid %}
                         {% for s in surveys %}
                         <li>
                             {% for f in survey_fields %}{% if s[f.field] %}
@@ -54,17 +54,17 @@ custom-foot: js/lake-mini-map.html
                     </ul>
                     
                 </div>
-            </div>
-            
+            </div> 
         </div>
+        {% endif %}
         
+        {% assign sources = site.data.grebe-lake-sources | where: 'lakeid',page.objectid %}
+        {% if sources %}
         <div class="col-12 py-4">
-
             <div class="card">
                 <div class="card-header">Sources of Information</div>
                 <div class="card-body">
                     <ul>
-                        {% assign sources = site.data.grebe-lake-sources | where: 'lakeid',page.objectid %}
                         {% for s in sources %}
                         <li>
                             {% if s.citation %}{{ s.citation }}
@@ -75,8 +75,8 @@ custom-foot: js/lake-mini-map.html
                     </ul>
                 </div>
             </div>
-            
         </div>
+        {% endif %}
         
     </div>
 
