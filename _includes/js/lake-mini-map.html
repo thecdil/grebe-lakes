@@ -1,6 +1,7 @@
 <style>
 #mini-map { height: 400px; z-index: 98; }
 </style>
+{% if page.latitude and page.longitude %}
 <!-- load leaflet dependencies -->
 <link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fullscreen.css' | relative_url }}">
@@ -42,3 +43,4 @@
     .bindPopup('{{ page.title | escape }}');
 
 </script>
+{% endif %}
