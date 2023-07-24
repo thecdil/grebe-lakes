@@ -4,4 +4,4 @@ HydroLAKE_ID,HydroLAKE,
 GRanD_id,GRanD,
 reservoir_nonreservoir,Basin Type,true,
 motorboat_restriction,Motor restrictions,true,
-management_agency,Management,true
+management_agency,Management,
