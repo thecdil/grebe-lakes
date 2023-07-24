@@ -1,4 +1,4 @@
-lakeid,title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,ecoregion,designations,comments
+objectid,title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,ecoregion,designations,comments
 aech_00001,Amisk Lake,AB,558,,54.4164,-102.174004,343.6,non-reservoir,,,,,,County of Althabasca; Beaver River Watershed Alliance; Alberta Lake Management Society,,,,,No other information on this lake.
 aech_00002,Angling Lake,AB,,,54.198439,-110.329567,5.89,non-reservoir,,,,,,Alberta Government,,,,,No other information on this lake.
 aech_00003,Battle Lake,AB,,,52.9683333,-114.1891667,4.56,non-reservoir,,partial,max 12 km/hr,,,Alberta Environment,fisheries,,,,Managed for fisheries.
