@@ -20,14 +20,14 @@ source-code: https://github.com/thecdil/grebe-lakes
 # title of site appears in banner
 title: Grebe Breeding Lakes
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Draft project!
+tagline: An inventory of Western and Clark's Grebe breeding sites in North America
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "Grebe Breeding Lakes brings together sources of information"
+description: "A summary of Western and Clark's Grebe breeding data to better document population status and regional variation in abundance."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: idaho;history;inland northwest
+keywords: grebes; Aechmophorus; wildlife management; wildlife surveys
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: Anne Yen; evanwill
 
 ##########
 # COLLECTION SETTINGS
