@@ -59,9 +59,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,comments"
+metadata-export-fields: "title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,ecoregion,designations,comments"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "reservoir_nonreservoir,motorboat_restriction,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use"
+metadata-facets-fields: "state_province,reservoir_nonreservoir,motorboat_restriction,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use"
 
 ##########
 # Compound Objects 
