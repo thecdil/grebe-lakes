@@ -1,7 +1,10 @@
 field,display_name,btn,hidden,sort_name
-state_province,State,true,
+state_province,,true,
 HydroLAKE_ID,HydroLAKE,
 GRanD_id,GRanD,
-reservoir_nonreservoir,Basin Type,true,
+reservoir_nonreservoir,Basin Type,
 motorboat_restriction,Motor restrictions,true,
+primary_emergent_veg,Emergent Vegetation,true,
+primary_veg_for_nesting,Nesting Vegetation,true,
+lake_use,Lake Uses,true,
 management_agency,Management,

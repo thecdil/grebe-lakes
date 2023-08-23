@@ -1,3 +1,7 @@
 field,index,display
 title,true,true
 state_province,true,true
+primary_emergent_veg,true,
+primary_veg_for_nesting,true,
+management_agency,true,true
+region_associations,true,true
