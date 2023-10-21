@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% if page.cover-image %}
+<style>
+    #cover-image {
+        background-image: url('{{ page.cover-image | relative_url }}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 22rem;
+    }
+</style>
+<div id="cover-image"></div>
+{% endif %}
+
+<div class="container-fluid my-4 cascade-contents">
+    <div class="cascade-intro">
+        <h1 class="display-4 fw-normal">{{ page.title }}</h1>
+        {% if page.description %}<p class="fs-3">{{ page.description }}</p>{% endif %}
+    </div>
+    {{ content }}
+</div>

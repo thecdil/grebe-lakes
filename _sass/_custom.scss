@@ -2,3 +2,19 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+.navbar-brand { text-wrap: wrap; }
+.cascade-contents {
+    .cascade-narrow {
+        max-width: 750px;
+        margin: 1.5rem auto 1rem;
+    }
+    .cascade-intro {
+        max-width: 950px;
+        margin: 3rem auto 4rem;
+    }
+    .cascade-row {
+        max-width: 1100px;
+        margin: 1rem auto 1rem;
+    }
+    
+}

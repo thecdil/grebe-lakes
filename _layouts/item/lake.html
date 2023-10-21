@@ -19,7 +19,7 @@ custom-foot: js/lake-mini-map.html
         {% if page.latitude and page.longitude %}
         <div class="col-md-5">
             <div id="mini-map"></div>
-            <a href="{{ '/index.html?location=' | append: page.latitude  | append: ',' | append: page.longitude | append: '&marker=' | append: page.objectid | relative_url }}" class="btn btn-outline-primary my-3">View on Full Map</a>
+            <a href="{{ '/map.html?location=' | append: page.latitude  | append: ',' | append: page.longitude | append: '&marker=' | append: page.objectid | relative_url }}" class="btn btn-outline-primary my-3">View on Full Map</a>
         </div>{% endif %}
         <div class="col-md-7">
 
