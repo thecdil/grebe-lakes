@@ -3,24 +3,29 @@
 layout: default
 custom-foot: js/lake-mini-map.html 
 ---
+{% assign surveys = site.data.grebe-surveys-table | where: 'lakeid', page.objectid %}
+{% assign survey_fields = site.data.config-survey-fields %}
+{% assign sources = site.data.grebe-lake-sources | where: 'lakeid', page.objectid %}
 <div class="container py-3">
 
-    {% include item/breadcrumbs.html %}
-    <div class="my-0 h5 small">{{ page.display_template | replace: "_", " " | upcase }} {% if page.display_template == "compound_object" or page.display_template == "multiple" %}{% assign children = site.data[site.metadata] | where_exp: 'item','item.parentid == page.objectid' %} ({{ children | size }} Items){% endif %}</div>
-    <h2 class="mb-3">{{ page.title }} 
-        <a href="#metadata" class="ms-5 btn btn-sm btn-outline-dark small">Lake Info 
-            <svg class="bi icon-sprite" role="img" aria-label="Jump to Item Info">
-                <use xlink:href="{{ '/assets/lib/cb-icons.svg' | relative_url }}#arrow-down"/>
-            </svg>
-        </a>
-    </h2>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/browse.html' | relative_url }}">Lakes</a></li>
+        <li class="breadcrumb-item active text-dark" aria-current="page">{{ page.title | truncatewords: 10 }}</li>
+    </ol>
+
+    <h1 class="mb-3">{{ page.title }}</h1>
 
     <div class="row justify-content-center">
-        {% if page.latitude and page.longitude %}
+        
         <div class="col-md-5">
-            <div id="mini-map"></div>
-            <a href="{{ '/map.html?location=' | append: page.latitude  | append: ',' | append: page.longitude | append: '&marker=' | append: page.objectid | relative_url }}" class="btn btn-outline-primary my-3">View on Full Map</a>
-        </div>{% endif %}
+            {% if page.latitude and page.longitude %}
+            <div id="mini-map" class="mb-2"></div>
+            <a href="{{ '/map.html?location=' | append: page.latitude  | append: ',' | append: page.longitude | append: '&marker=' | append: page.objectid | relative_url }}" class="btn btn-outline-primary m-1">View on Full Map</a>
+            {% endif %}
+            {% if surveys %}<a href="#surveys-summary" class="btn btn-outline-primary m-1">View Surveys ({{ surveys | size }})</a>{% endif %}
+            {% if sources %}<a href="#info-sources" class="btn btn-outline-primary m-1">View Sources ({{ sources | size }})</a>{% endif %}
+        </div>
         <div class="col-md-7">
 
             <div class="mb-4">
@@ -33,36 +38,86 @@ custom-foot: js/lake-mini-map.html
 
         </div>
 
-        {% assign surveys = site.data.grebe-surveys-table | where: 'lakeid',page.objectid %}
         {% if surveys %}
+        <h2 id="surveys-summary">Surveys Summary</h2>
         <div class="col-12 py-4">
-            <div class="card">
-                <div class="card-header">Survey Information</div>
+            {% for s in surveys %}
+            <div class="card mb-4">
                 <div class="card-body">
-                    <ul>
-                        {% assign survey_fields = site.data.config-survey-fields %}
-                        {% for s in surveys %}
-                        <li>
-                            {% for f in survey_fields %}{% if s[f.field] %}
-                            <strong>{{ f.display_name }}:</strong>
+
+                    <p><strong>Citation:</strong> {{ s.citations }}</p>
+
+                    <ul class="list-group list-group-horizontal">
+                        {% for f in survey_fields %}{% if s[f.field] %}
+                        <li class="list-group-item">
+                            <strong>{{ f.display_name }}</strong><br>
                             {{ s[f.field] }}
-                            {% unless forloop.last %}| {% endunless %}
-                            {% endif %}
-                            {% endfor %}
                         </li>
-                        {% endfor %}
+                        {% endif %}{% endfor %}
                     </ul>
                     
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Count Type</th>
+                            <th scope="col">Range</th>
+                            <th scope="col">Max</th>
+                            <th scope="col">Year</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Max Adults</th>
+                            <td>{{ s.max_adults_range }}</td>
+                            <td>{{ s.max_adults }}</td>
+                            <td>{{ s.year_max_adults }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Most Recent Adults</th>
+                            <td>{{ s.most_recent_adults_range }}</td>
+                            <td>{{ s.most_recent_adults }}</td>
+                            <td>{{ s.year_most_recent_adults }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Max Nests</th>
+                            <td>{{ s.max_nests_range }}</td>
+                            <td>{{ s.max_nests }}</td>
+                            <td>{{ s.year_max_nests }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Most Recent Nests</th>
+                            <td>{{ s.most_recent_nests_range }}</td>
+                            <td>{{ s.most_recent_nests }}</td>
+                            <td>{{ s.year_most_recent_nests }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Max Chicks</th>
+                            <td>{{ s.max_chicks_range }}</td>
+                            <td>{{ s.max_chicks }}</td>
+                            <td>{{ s.year_max_chicks }}</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Most Recent Chicks</th>
+                            <td>{{ s.most_recent_chicks_range }}</td>
+                            <td>{{ s.most_recent_chicks }}</td>
+                            <td>{{ s.year_most_recent_chicks }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      {% if s.survey_comment %}<p><strong>Comments:</strong> {{ s.survey_comment }}</p>{% endif %}
+
                 </div>
             </div> 
+            {% endfor %}
+
         </div>
         {% endif %}
         
-        {% assign sources = site.data.grebe-lake-sources | where: 'lakeid',page.objectid %}
         {% if sources %}
+        <h2 id="info-sources">Sources of Information</h2>
         <div class="col-12 py-4">
             <div class="card">
-                <div class="card-header">Sources of Information</div>
                 <div class="card-body">
                     <ul>
                         {% for s in sources %}

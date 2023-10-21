@@ -1,8 +1,5 @@
 field,display_name
-most_recent_adult,Most recent adult
 survey_type,Type
 survey_time_period,Time period
-frequency_survey,Frequency
-duration_study,Duration
-data_source_type,Source type
-citations,Citations
+data_source_type,Source
+western_clarks_both,Both Western and Clarks?
