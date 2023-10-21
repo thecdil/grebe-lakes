@@ -8,6 +8,7 @@
             <p class="text-white"><small>{{ site.description }}</small></p>
             <nav>
                 <ul id="footer-nav" class="nav nav-pills ">
+                    <li class="nav-item"><a class="nav-link text-light{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
                     {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
                     {% for nav in navItems %}
                     <li class="nav-item">
