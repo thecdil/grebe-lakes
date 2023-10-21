@@ -36,5 +36,5 @@
     <a class="spotlight" data-download="true" data-title="{{ image_caption | escape }}" href="{{ image_src }}">
         <img class="figure-img img-fluid rounded lazyload" alt="{{ image_alt | escape }}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="{{ image_src }}" >
     </a>
-    {% unless include.caption == false %}<figcaption class="figure-caption">{{ image_caption }}</figcaption>{% endunless %}
+    {% unless include.caption == false %}<figcaption class="figure-caption text-start">{{ image_caption }}</figcaption>{% endunless %}
 </figure>
