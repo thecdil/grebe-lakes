@@ -45,7 +45,7 @@ custom-foot: js/lake-mini-map.html
             <div class="card mb-4">
                 <div class="card-body">
 
-                    <p><strong>Citation:</strong> {{ s.citations | default: s['JOURNAL OF WILDLIFE MANAGEMENT CITATION'] }}</p>
+                    <h3 class="card-title h4 mb-3">Survey Citation: <br><span class="fw-normal h5">{{ s.citations | default: s['JOURNAL OF WILDLIFE MANAGEMENT CITATION'] }}</span></h3>
 
                     <ul class="list-group list-group-horizontal-md">
                         {% for f in survey_fields %}{% if s[f.field] %}
@@ -105,7 +105,8 @@ custom-foot: js/lake-mini-map.html
                         </tbody>
                       </table>
 
-                      {% if s.survey_comment %}<p><strong>Comments:</strong> {{ s.survey_comment }}</p>{% endif %}
+                      {% if s.survey_comment %}<h4>Comments:</h4>
+                      <p>{{ s.survey_comment }}</p>{% endif %}
 
                 </div>
             </div> 
