@@ -2,7 +2,9 @@
 
 **Western and Clark's Grebe Breeding Lakes of North America: An inventory of Western and Clark's Grebe breeding sites in North America**
 
-Research by Anne Yen, with digital project completed with support from Evan Peter Williamson as part of 2023 [Data Hub](https://www.lib.uidaho.edu/datahub/) / [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) Graduate Student Fellowship.
+This interactive website provides access to a summary of Western and Clark's Grebe breeding data to better document population status and regional variation in abundance.
+
+Originally developed in 2023 as part of a [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) Graduate Student Fellowship by Anne Yen (CNR University of Idaho, supervisor Courtney Conway) supported by Evan Peter Williamson.
 
 ----------
 
