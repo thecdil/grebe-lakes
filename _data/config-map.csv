@@ -2,5 +2,8 @@ field,display_name,search
 state_province,Location,true
 HydroLAKE_ID,HydroLAKE,true
 GRanD_id,GRanD,true
-reservoir_nonreservoir,Basin Type,
-management_agency,Management,true
+reservoir_nonreservoir,Basin Type,true
+max_adults,Max Adults,false
+year_max_adults,Max Year,false
+most_recent_adults,Most Recent Adults,false
+year_most_recent_adults,Most Recent Year,false
