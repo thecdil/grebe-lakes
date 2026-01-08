@@ -6,6 +6,10 @@ custom-foot: js/lake-mini-map.html
 {% assign surveys = site.data.grebe-surveys-table | where: 'lakeid', page.objectid %}
 {% assign survey_fields = site.data.config-survey-fields %}
 {% assign sources = site.data.grebe-lake-sources | where: 'lakeid', page.objectid %}
+{% assign summary_fields = site.data.config-survey-summary %}
+{% capture summary_content %}{% for f in survey_fields %}{% if page[f.field] %}{{ page[f.field] }}{%- endif -%}{%- endfor -%}{% endcapture %}
+{% assign summary_content = summary_content | strip %}
+
 <div class="container py-3">
 
     <ol class="breadcrumb">
@@ -25,6 +29,18 @@ custom-foot: js/lake-mini-map.html
             {% endif %}
             {% if surveys %}<a href="#surveys-summary" class="btn btn-outline-primary m-1">View Surveys ({{ surveys | size }})</a>{% endif %}
             {% if sources %}<a href="#info-sources" class="btn btn-outline-primary m-1">View Sources ({{ sources | size }})</a>{% endif %}
+            {% if summary_content != "" %}
+            <div class="m-3 card card-body">
+              <h2 class="card-title">Grebe Survey Summary</h2>
+              <ul>
+                  {% for f in summary_fields %}{% if page[f.field] %}
+                  <li>
+                      <strong>{{ f.display_name }}:</strong> {{ page[f.field] }}
+                  </li>
+                  {% endif %}{% endfor %}
+              </ul>
+            </div>
+            {% endif %}
         </div>
         <div class="col-md-7">
 
@@ -39,7 +55,7 @@ custom-foot: js/lake-mini-map.html
         </div>
 
         {% if surveys %}
-        <h2 id="surveys-summary">Summary of Surveys ({{ surveys | size }})</h2>
+        <h2 id="surveys-summary">Surveys ({{ surveys | size }})</h2>
         <div class="col-12 py-4">
             {% for s in surveys %}
             <div class="card mb-4">
