@@ -8,6 +8,10 @@ This interactive website provides access to a summary of Western and Clark's Gre
 
 Originally developed in 2023 as part of a [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) Graduate Student Fellowship by Anne Yen (CNR University of Idaho, supervisor Courtney Conway) supported by Evan Peter Williamson.
 
+Project notes and documentation can be found in "docs/grebe-lakes/" in this repository.
+
+See also: Anne Yen, Western and Clark's Grebes: Impacts of Weather on Nest Fate and a Range-wide Summary of Threats to Breeding Colonies, MS Thesis, 2024, https://verso.uidaho.edu/esploro/outputs/996671146401851
+
 ----------
 
 *built with CollectionBuilder-CSV*
