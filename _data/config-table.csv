@@ -2,3 +2,5 @@ field,display_name
 title,Lake
 state_province,Location
 management_agency,Management
+max_adults,Max Adult Count
+year_max_adults,Max Count Year
