@@ -10,6 +10,8 @@ Originally developed in 2023 as part of a [Center for Digital Inquiry and Learni
 
 Project notes and documentation can be found in "docs/grebe-lakes/" in this repository.
 
+DOI: <https://doi.org/10.60841/EVS7-B505>
+
 See also: Anne Yen, Western and Clark's Grebes: Impacts of Weather on Nest Fate and a Range-wide Summary of Threats to Breeding Colonies, MS Thesis, 2024, https://verso.uidaho.edu/esploro/outputs/996671146401851
 
 ----------
