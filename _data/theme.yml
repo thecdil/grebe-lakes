@@ -59,9 +59,9 @@ year-nav-increment: 5 # set increments to auto gen nav years
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,ecoregion,designations,comments"
+metadata-export-fields: "title,state_province,HydroLAKE_ID,GRanD_id,latitude,longitude,surface_area_km2,reservoir_nonreservoir,date_dam_completion,motorboat_restriction,motorboat_restriction_notes,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,region_associations,ecoregion,designations,comments,max_adults,year_max_adults,most_recent_adults,year_most_recent_adults,max_nests,year_max_nests,most_recent_nests,year_most_recent_nests,max_chicks,year_max_chicks,most_recent_chicks,year_most_recent_chicks,western_clarks_both,survey_type,survey_time_period,frequency_survey,most_common_threats_reported"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "state_province,reservoir_nonreservoir,motorboat_restriction,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use"
+metadata-facets-fields: "state_province,reservoir_nonreservoir,motorboat_restriction,primary_emergent_veg,primary_veg_for_nesting,management_agency,lake_use,ecoregion,designations,most_common_threats_reported"
 
 ##########
 # Compound Objects 

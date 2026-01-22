@@ -24,3 +24,7 @@ Click the terms view related lake records.
 ## Lake uses
 
 {% include feature/cloud.html fields="lake_use" button="primary" %}
+
+## Most Common Threats Reported 
+
+{% include feature/cloud.html fields="most_common_threats_reported" button="danger" %}
