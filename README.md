@@ -4,13 +4,17 @@
 
 <https://cdil.lib.uidaho.edu/grebe-lakes/>
 
+DOI: <https://doi.org/10.60841/EVS7-B505>
+
 This interactive website provides access to a summary of Western and Clark's Grebe breeding data to better document population status and regional variation in abundance.
 
-Originally developed in 2023 as part of a [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) Graduate Student Fellowship by Anne Yen (CNR University of Idaho, supervisor Courtney Conway) supported by Evan Peter Williamson.
+Originally developed in 2023 as part of a [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/) Graduate Student Fellowship by Anne Yen (CNR University of Idaho, supervisor Courtney Conway and Kerri Vierling) supported by Evan Peter Williamson.
+
+Citation:
+
+Yen, A., C. J. Conway. K. T. Vierling, and E. P. Williamson. 2025. Western and Clark's Grebe Breeding Lakes of North America. Website. University of Idaho Library, Moscow, Idaho. DOI: https://doi.org/10.60841/EVS7-B505
 
 Project notes and documentation can be found in "docs/grebe-lakes/" in this repository.
-
-DOI: <https://doi.org/10.60841/EVS7-B505>
 
 See also: Anne Yen, Western and Clark's Grebes: Impacts of Weather on Nest Fate and a Range-wide Summary of Threats to Breeding Colonies, MS Thesis, 2024, https://verso.uidaho.edu/esploro/outputs/996671146401851
 
