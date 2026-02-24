@@ -25,7 +25,7 @@ Western and Clark's Grebes are often counted together in breeding bird surveys b
 
 **Can you spot the most obvious difference between these two species according to their photos below?**
 
-{% include feature/image.html objectid="/assets/img/2020_08_04_Clarks_adult_opt.jpg;/assets/img/2020_08_04_DFNWR_western_grebe_opt.jpg" caption="Clark's Grebe;Western Grebe" %}
+{% include feature/image.html objectid="/assets/img/2020_08_04_Clarks_adult_opt.jpg;/assets/img/2020_08_04_DFNWR_western_grebe_opt.jpg" caption="Clark's Grebe;Western Grebe" alt="bird floating low in the water with red eye with brown feathers;bird floating low in the water with dark feathers and red eye"%}
 
 ## About the Project
 
