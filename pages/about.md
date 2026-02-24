@@ -44,7 +44,7 @@ Grebe breeding lakes can be browsed by [record information]({{ '/browse.html' | 
 Each individual lake record contains information about the location, a summary of survey data, a list of surveys, and a list of sources.
 The source references can be used to find additional details and the original data.
 
-If you have any questions about this project or if you have Western and Clark’s Grebe data to share, please contact Anne Yen at <ayen@uidaho.edu>.
+If you have any questions about this project or if you have Western and Clark’s Grebe data to share, please contact [Courtney Conway (University of Idaho)](https://www.uidaho.edu/people/cconway).
 
 {% capture note %}
 This project is based in summarizing broad survey data.
